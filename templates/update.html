@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{%block head %}
+<title> update</title>
+{%endblock%}
+{%block body %}
+<div class="cotact">
+    <h1 style="text-align: center;"> update </h1>
+    <table border="3">
+        <div class="form">
+            <form action="/update/{{task.id}}" method="post">
+                <input type="text" name="content" id="content" value="{{task.content}}">
+                <input type="submit" value="update">
+
+            </form>
+
+        </div>
+
+
+
+</div>
+{%endblock%}
